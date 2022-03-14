@@ -48,7 +48,7 @@
 
       var map = window.map = new AMap.Map('map', {
           zoom: 11.7,
-          center: [113.97199630737305, 22.5807295363949],
+          center: [120.868571,30.033862],
           pitch: 40,
           showLabel: false,
           mapStyle: 'amap://styles/dark',
@@ -61,7 +61,7 @@
 
       // 蓝色普通点
       var geo = new Loca.GeoJSONSource({
-          url: 'https://a.amap.com/Loca/static/loca-v2/demos/mock_data/sz_road.json',
+          url: 'https://fisher-007.github.io/point.json',
       });
       var scatter = new Loca.ScatterLayer({
           zIndex: 111,
