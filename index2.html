@@ -93,7 +93,7 @@
       breathRed.setSource(geoLevelF);
       breathRed.setStyle({
           unit: 'meter',
-          size: [150, 150],
+          size: [500, 500],
           borderWidth: 0,
           texture: 'https://a.amap.com/Loca/static/loca-v2/demos/images/breath_red.png',
           duration: 500,
@@ -103,7 +103,7 @@
       // 黄色呼吸点
       var geoLevelE = new Loca.GeoJSONSource({
           // data: [],
-          url: 'https://a.amap.com/Loca/static/loca-v2/demos/mock_data/sz_road_E.json',
+          url: 'https://fisher-007.github.io/yellow.json',
       });
       var breathYellow = new Loca.ScatterLayer({
           loca,
@@ -115,7 +115,7 @@
       breathYellow.setSource(geoLevelE);
       breathYellow.setStyle({
           unit: 'meter',
-          size: [100, 100],
+          size: [250, 250],
           borderWidth: 0,
           texture: 'https://a.amap.com/Loca/static/loca-v2/demos/images/breath_yellow.png',
           duration: 1000,
