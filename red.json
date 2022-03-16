@@ -1,0 +1,135 @@
+{
+    "type":"FeatureCollection",
+    "features":[
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.845442, 30.018758]
+                },
+                "properties": {
+                    "name": "1809",
+                    "value": 1809,
+                    "level": "B",
+                    "month": 202203
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.835841, 30.025635]
+                },
+                "properties": {
+                    "name": "98",
+                    "value": 98,
+                    "level": "B",
+                    "month": 202203
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.839471, 30.005126]
+                },
+                "properties": {
+                    "name": "44",
+                    "value": 44,
+                    "level": "B",
+                    "month": 202203
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.867808, 30.006376]
+                },
+                "properties": {
+                    "name": "4746",
+                    "value": 4746,
+                    "level": "B",
+                    "month": 202203
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.826808, 30.031259]
+                },
+                "properties": {
+                    "name": "312",
+                    "value": 312,
+                    "level": "B",
+                    "month": 202203
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.867449, 30.034977]
+                },
+                "properties": {
+                    "name": "817",
+                    "value": 817,
+                    "level": "B",
+                    "month": 202203
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.859250, 30.045771]
+                },
+                "properties": {
+                    "name": "926",
+                    "value": 926,
+                    "level": "B",
+                    "month": 202203
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.895709, 30.047467]
+                },
+                "properties": {
+                    "name": "3799",
+                    "value": 3799,
+                    "level": "B",
+                    "month": 202203
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.892708, 30.031393]
+                },
+                "properties": {
+                    "name": "4869",
+                    "value": 4869,
+                    "level": "B",
+                    "month": 202203
+                }
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [120.867166, 30.035836]
+                },
+                "properties": {
+                    "name": "816",
+                    "value": 816,
+                    "level": "B",
+                    "month": 202203
+                }
+            }
+    ]
+}
