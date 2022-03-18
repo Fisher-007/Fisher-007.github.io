@@ -39,31 +39,39 @@ var option;
 
 
 function randomData() {
-  now = new Date(+now + oneDay);
-  value = value + Math.random() * 21 - 10;
+  now = new Date(+now + oneSecond);
+  value = value + Math.random() * 0.02 - 0.01;
   return {
     name: now.toString(),
     value: [
-      [now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'),
-      Math.round(value)
+      now.getTime(),
+      value
     ]
   };
 }
 let data = [];
-let now = new Date(1997, 9, 3);
-let oneDay = 24 * 3600 * 1000;
-let value = Math.random() * 1000;
+let now = new Date(2021, 6, 27, 18, 0, 0);
+let oneSecond = 100;
+let value = 0.8;
 for (var i = 0; i < 1000; i++) {
   data.push(randomData());
 }
 option = {
-  backgroundColor: '#000000',
+  title: {
+    text: 'Dynamic Data & Time Axis'
+  },
   tooltip: {
     trigger: 'axis',
     formatter: function (params) {
       params = params[0];
       var date = new Date(params.name);
       return (
+        date.getHours() +
+        ':' +
+        date.getMinutes() +
+        ':' +
+        date.getSeconds() +
+        '  ' +
         date.getDate() +
         '/' +
         (date.getMonth() + 1) +
@@ -99,10 +107,11 @@ option = {
     }
   ]
 };
+
 setInterval(function () {
-  for (var i = 0; i < 5; i++) {
-    data.shift();
-    data.push(randomData());
+  for (var i = 0; i < 10; i++) {
+      data.shift();
+      data.push(randomData());
   }
   myChart.setOption({
     series: [
