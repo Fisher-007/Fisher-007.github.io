@@ -43,23 +43,18 @@ function randomData() {
   value = value + Math.random() * 0.02 - 0.01;
   return {
     name: now.toString(),
-    value: [
-      now.getTime(),
-      value
-    ]
+    value: [now.getTime(), value]
   };
 }
 let data = [];
-let now = new Date(2021, 6, 27, 18, 0, 0);
+let now = new Date(1997, 9, 3, 18, 0, 0);
 let oneSecond = 100;
 let value = 0.8;
 for (var i = 0; i < 1000; i++) {
   data.push(randomData());
 }
 option = {
-  title: {
-    text: 'Dynamic Data & Time Axis'
-  },
+  backgroundColor: '#FFFFFF',
   tooltip: {
     trigger: 'axis',
     formatter: function (params) {
@@ -92,7 +87,7 @@ option = {
     }
   },
   yAxis: {
-    type: 'value',
+    type: 'R',
     boundaryGap: [0, '100%'],
     splitLine: {
       show: false
@@ -110,8 +105,8 @@ option = {
 
 setInterval(function () {
   for (var i = 0; i < 10; i++) {
-      data.shift();
-      data.push(randomData());
+    data.shift();
+    data.push(randomData());
   }
   myChart.setOption({
     series: [
