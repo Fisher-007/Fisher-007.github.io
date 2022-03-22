@@ -40,14 +40,14 @@ var option;
 
 function randomData() {
   now = new Date(+now + oneSecond);
-  value = value + Math.random() * 0.02 - 0.01;
+  value = math.max(math.min(value + Math.random() * 0.02 - 0.01, 0.98), 0.58);
   return {
     name: now.toString(),
     value: [now.getTime(), value]
   };
 }
 let data = [];
-let now = new Date(1997, 9, 3, 20, 30, 0);
+let now = new Date(2021, 6, 27, 8, 30, 0);
 let oneSecond = 100;
 let value = 0.8;
 for (var i = 0; i < 1000; i++) {
